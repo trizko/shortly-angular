@@ -1,10 +1,10 @@
 <div id='container'>
   <h1>Links</h1>
-  <!-- <form name="signinForm" ng-submit='signin()'>
-    <input type='text'ng-model='user.username'>
-    <input type="password" ng-model='user.password'>
-    <button>signin</button>
-  </form> -->
+  <ul>
+    <li ng-repeat="link in data.links">
+      {{ link.url }}
+    </li>
+  </ul>
   <a href="#/shorten">Want to shorten a URL <strong>Shorten</strong> ...</a>
 
 </div>
